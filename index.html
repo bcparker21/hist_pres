@@ -21,7 +21,7 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
+          zoom: 13,
           center: new google.maps.LatLng(43.69,-116.37),
           mapTypeId: 'terrain'
         });
@@ -30,7 +30,9 @@
         var script = document.createElement('script');
         // This example uses a local copy of the GeoJSON stored at
         // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-        script.src = 'https://github.com/bcparker21/historic-preservation-map/blob/master/Historic_Preservation_Mega_Join.geojson';
+        
+        /* TODO: Get geojson in hosted site 
+        script.src = '';*/
         document.getElementsByTagName('head')[0].appendChild(script);
       }
 
